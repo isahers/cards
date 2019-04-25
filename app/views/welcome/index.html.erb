@@ -1,0 +1,15 @@
+<h1>Listing cards</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tags</th>
+  </tr>
+
+  <% @details.each do |card| %>
+    <tr>
+      <td><%= card.name %></td>
+      <td><%= card.tags %></td>
+    </tr>
+  <% end %>
+</table>
